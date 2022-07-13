@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+
+body {
+  font-family: $font-primary;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-secondary {
+  font-family: $font-secondary;
+}
+
+.heading-primary {
+  font-size: 5.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: $white;
+  letter-spacing: 1rem;
+
+  @include respond(mobile-xs) {
+    font-size: 4.5rem;
+  }
+
+  @include respond(small-lg) {
+    font-size: 4rem;
+  }
+
+  @include respond(small-s) {
+    font-size: 3.5rem;
+  }
+}
+
+.heading-tertiary {
+  font-family: $font-secondary;
+  font-weight: 900;
+  font-size: 4rem;
+
+  @include respond(tab-port) {
+    font-size: 2.6rem;
+  }
+
+  @include respond(mobile-bg) {
+    font-size: 2.4rem;
+  }
+
+  @include respond(mobile) {
+    font-size: 2.2rem;
+  }
+}
+
+.heading-fourth {
+  font-family: $font-secondary;
+  font-size: 2rem;
+  font-weight: 900;
+
+  @include respond(mobile-md) {
+    font-size: 1.5rem;
+  }
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  letter-spacing: -0.3px;
+
+  @include respond(tab-port) {
+    font-size: 1.6rem;
+    font-weight: 900;
+  }
+
+  @include respond(mobile-bg) {
+    font-size: 1.4rem;
+  }
+
+  @include respond(mobile) {
+    font-size: 1.2rem;
+  }
+
+  @include respond(mobile-xs) {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+}
+
+.title {
+  font-size: 1.6rem;
+  color: rgba($grayish-blue, 0.7);
+  letter-spacing: -0.3px;
+
+  @include respond(mobile-md) {
+    display: block;
+    font-size: 1.4rem;
+  }
+}

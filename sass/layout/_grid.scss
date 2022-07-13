@@ -1,0 +1,81 @@
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include respond(mobile-xs) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 15rem auto;
+
+  @include respond(tab-port) {
+    grid-template-rows: 7rem auto;
+  }
+
+  @include respond(mobile-sm) {
+    grid-template-rows: 5rem auto;
+  }
+
+  @include respond(mobile-xs) {
+    grid-template-columns: 30rem;
+    grid-template-rows: 6rem auto;
+    justify-content: center;
+    row-gap: 5rem;
+  }
+}
+
+.grid-col-4 {
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(14rem, 30rem));
+
+  grid-template-rows: 37.4rem;
+
+  display: grid;
+  grid-template-columns: repeat(4, 30rem);
+  grid-template-rows: 37.4rem;
+  justify-content: center;
+
+  @include respond(tab-land) {
+    grid-template-columns: repeat(4, 23rem);
+    grid-template-rows: 28.7rem;
+  }
+
+  @include respond(tab-port) {
+    grid-template-columns: repeat(4, 15rem);
+    grid-template-rows: 18.7rem;
+  }
+
+  @include respond(mobile-bg) {
+    grid-template-columns: repeat(4, 11rem);
+    grid-template-rows: 13.7rem;
+  }
+
+  @include respond(mobile-xs) {
+    grid-template-columns: repeat(2, 21.7rem);
+    grid-template-rows: repeat(2, 21.7rem);
+  }
+
+  @include respond(mobile-xxs) {
+    grid-template-columns: repeat(2, 21rem);
+    grid-template-rows: repeat(2, 21rem);
+  }
+
+  @include respond(small-lg) {
+    // grid-template-columns: repeat(2, 18.5rem);
+    // grid-template-rows: repeat(2, 18.5rem);
+    grid-template-columns: repeat(2, 16.1rem);
+    grid-template-rows: repeat(2, 20rem);
+  }
+
+  @include respond(small-md) {
+    // grid-template-columns: repeat(2, 14rem);
+    // grid-template-rows: repeat(2, 14rem);
+
+    grid-template-columns: repeat(2, 12rem);
+    grid-template-rows: repeat(2, 14.9rem);
+  }
+}

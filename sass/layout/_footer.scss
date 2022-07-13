@@ -1,0 +1,85 @@
+.footer {
+  padding: 7rem;
+  display: grid;
+  grid-template-rows: 6rem 13rem 15rem;
+  background-color: #91d4c6;
+  justify-items: center;
+  align-items: center;
+
+  @include respond(tab-land) {
+    padding: 5rem;
+    grid-template-rows: 5rem 12rem 12rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 3rem;
+    grid-template-rows: 5rem 9rem 9rem;
+  }
+
+  @include respond(mobile-xs) {
+    grid-template-columns: 30rem;
+    justify-content: center;
+  }
+
+  &__logo svg {
+    margin: 1rem;
+  }
+
+  &__logo path {
+    fill: #2c5c51;
+  }
+
+  &-nav {
+    width: 40rem;
+    @include respond(mobile-xs) {
+      width: 25rem;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__item {
+      list-style: none;
+    }
+
+    &__link:link,
+    &__link:visited {
+      text-decoration: none;
+      font-size: 2rem;
+      color: $dark-moderate-cyan;
+      transition: all ease-in 0.2s;
+    }
+
+    &__link:hover,
+    &__link:active {
+      text-decoration: none;
+      font-size: 2rem;
+      color: rgba($dark-moderate-cyan, 0.4);
+    }
+  }
+
+  &-social-nav {
+    width: 20rem;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__item {
+      list-style: none;
+    }
+
+    &__link:link,
+    &__link:visited {
+      text-decoration: none;
+    }
+
+    &__link img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}

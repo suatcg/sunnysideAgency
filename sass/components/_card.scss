@@ -1,0 +1,82 @@
+.card {
+  &__avatar {
+    @include respond(tab-port) {
+      margin-bottom: 1.5rem !important;
+    }
+
+    @include respond(mobile-md) {
+      margin-bottom: 1.2rem !important;
+    }
+
+    @include respond(mobile-xs) {
+      margin-bottom: 2.5rem !important;
+    }
+  }
+
+  &__image {
+    width: 6rem;
+    border-radius: 50%;
+    margin: 0 auto;
+
+    @include respond(mobile-md) {
+      width: 4.5rem;
+    }
+
+    @include respond(mobile-xs) {
+      width: 6rem;
+    }
+  }
+
+  &__paragraph {
+    width: 30rem;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    letter-spacing: -0.3px;
+    color: rgba($very-dark-grayish-blue, 0.8);
+
+    @include respond(tab-port) {
+      width: 22rem;
+      font-size: 1.4rem;
+      letter-spacing: -0.1px;
+      margin-bottom: 2.5rem !important;
+    }
+
+    @include respond(mobile-bg) {
+      width: 20rem;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+    }
+
+    @include respond(mobile-md) {
+      width: 17.3rem;
+      font-size: 1rem;
+      letter-spacing: 0.3px;
+    }
+
+    @include respond(mobile-sm) {
+      // width: 16.7rem;
+      width: 15.7rem;
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: 0.2px;
+      margin-bottom: 2rem !important;
+    }
+
+    @include respond(mobile-xs) {
+      width: 30rem;
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: 0.1px;
+      margin-bottom: 2rem !important;
+    }
+  }
+
+  // &__client {
+  //   // display: flex;
+  //   // flex-direction: column;
+  //   // justify-items: center;
+  //   // margin-top: 0;
+  //   // margin-left: 1px !important;
+  //   // margin-right: 1px !important;
+  // }
+}

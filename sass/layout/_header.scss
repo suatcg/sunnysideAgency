@@ -1,0 +1,35 @@
+.header {
+  background-image: url(../../images/desktop/image-header.jpg);
+  width: 100vw;
+  // // height: 80rem;
+  // max-width: 100vw;
+  // width: min(100%, 100vw);
+  overflow: hidden;
+  height: 75vh;
+  // height: min(15vw, 70rem);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom 40% right 50%;
+  position: relative;
+
+  // @include respond(small-md) {
+  //   height: 67.5rem;
+  // }
+
+  &__text-box {
+    text-align: center;
+    margin-bottom: 6rem;
+
+    @include respond(mobile-xs) {
+      margin-bottom: 4rem;
+    }
+
+    @include respond(small-md) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__icon {
+    text-align: center;
+  }
+}

@@ -1,0 +1,101 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem;
+  margin-bottom: 7.5rem;
+
+  &__nav {
+    position: relative;
+
+    @include respond(mobile-xs) {
+      display: none;
+    }
+  }
+
+  @include respond(mobile-bg) {
+    margin-bottom: 5.5rem;
+  }
+
+  &__logo {
+    padding-top: 0.8rem;
+    // @include respond(mobile-md) {
+    //   padding-top: 1rem;
+    // }
+  }
+
+  &__logo--image {
+    width: 18rem;
+
+    @include respond(mobile-bg) {
+      width: 15rem;
+    }
+
+    @include respond(mobile-sm) {
+      width: 12rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: baseline;
+    gap: 4rem;
+
+    @include respond(mobile-bg) {
+      align-items: center;
+      gap: 3rem;
+    }
+
+    @include respond(mobile-sm) {
+      gap: 1.5rem;
+    }
+
+    &:link,
+    &:visited {
+      color: $white;
+    }
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    &:link,
+    &:visited {
+      color: $white;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__button {
+    width: 12rem;
+    height: 5rem;
+    border: none;
+    border-radius: 50px;
+    background-color: $white;
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 900;
+    // transform: translateY(-1.5rem);
+
+    @include respond(mobile-bg) {
+      width: 10rem;
+      height: 4rem;
+    }
+
+    &:hover {
+      background-color: $light-blue;
+      color: $white;
+    }
+  }
+
+  &__content {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      gap: 4rem;
+    }
+  }
+}

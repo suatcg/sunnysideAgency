@@ -1,0 +1,212 @@
+.article-container {
+  margin: auto;
+}
+
+.article {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+
+  @include respond(desktop) {
+    width: 45rem;
+  }
+
+  @include respond(tab-land) {
+    width: 35rem;
+  }
+
+  @include respond(tab-land) {
+    width: 30rem;
+  }
+
+  @include respond(mobile-bg) {
+    width: 25rem;
+  }
+
+  @include respond(mobile-md) {
+    width: 21rem;
+  }
+
+  @include respond(mobile-sm) {
+    width: 20rem;
+  }
+
+  @include respond(mobile-xs) {
+    width: 30rem;
+  }
+
+  &__header-box {
+    width: 40rem;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+
+    @include respond(tab-land) {
+      width: 30rem;
+      margin-bottom: 2rem;
+    }
+
+    @include respond(tab-port) {
+      width: 25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @include respond(mobile-bg) {
+      width: 20rem;
+      margin-bottom: 1.3rem;
+    }
+
+    @include respond(mobile-md) {
+      margin-bottom: 1.2rem;
+    }
+
+    @include respond(mobile-sm) {
+      width: 18rem;
+      margin-bottom: 1rem;
+    }
+
+    @include respond(mobile-xs) {
+      width: 30rem;
+      margin: 6.5rem auto;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__header {
+    font-size: 4rem;
+    color: $very-dark-desaturated-blue;
+    @include respond(tab-land) {
+      font-size: 3.5rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 2.8rem;
+    }
+
+    @include respond(mobile-bg) {
+      font-size: 2.6rem;
+    }
+
+    @include respond(mobile-md) {
+      font-size: 2.5rem;
+    }
+
+    @include respond(mobile-sm) {
+      font-size: 2.1rem;
+    }
+
+    @include respond(mobile-xs) {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    @include respond(small-s) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__paragraph-box {
+    // width: 50rem;
+    margin-bottom: 4rem;
+
+    @include respond(tab-land) {
+      margin-bottom: 3.5rem;
+    }
+
+    @include respond(tab-port) {
+      margin-bottom: 2.5rem;
+    }
+
+    @include respond(mobile-bg) {
+      margin-bottom: 2.3rem;
+    }
+
+    @include respond(mobile-md) {
+      margin-bottom: 2rem;
+    }
+
+    @include respond(mobile-sm) {
+      margin-bottom: 1rem;
+    }
+
+    @include respond(mobile-xs) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__paragraph {
+    font-size: 1.8rem;
+    color: $dark-grayish-blue;
+    letter-spacing: 0.8px;
+
+    @include respond(tab-land) {
+      font-size: 1.625rem;
+      letter-spacing: 0.5px;
+    }
+
+    @include respond(tab-port) {
+      font-size: 1.425rem;
+      letter-spacing: 0.3px;
+    }
+
+    @include respond(mobile-bg) {
+      font-size: 1.225rem;
+    }
+
+    @include respond(mobile-sm) {
+      font-size: 1.125rem;
+    }
+
+    @include respond(mobile-xs) {
+      font-size: 2.3rem;
+      letter-spacing: -0.2px;
+      text-align: center;
+    }
+
+    @include respond(small-md) {
+      font-size: 1.6rem;
+    }
+
+    @include respond(small-s) {
+      font-size: 1.325rem;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-transform: uppercase;
+    font-family: $font-secondary;
+    color: $very-dark-desaturated-blue;
+    font-size: 2rem;
+    font-weight: 900;
+
+    text-decoration: none;
+    // text-decoration-color: rgba($yellow, 0.2);
+    // text-decoration-thickness: 8px;
+
+    @include respond(tab-land) {
+      font-size: 1.8rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+    }
+
+    @include respond(mobile-bg) {
+      font-size: 1.4rem;
+    }
+
+    @include respond(mobile-xs) {
+      font-size: 1.9rem;
+      text-align: center;
+    }
+  }
+
+  .transform &__underline {
+    @include underline($yellow);
+  }
+
+  .standout &__underline {
+    @include underline($soft-red);
+  }
+}
